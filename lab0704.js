@@ -1,6 +1,7 @@
 const sensorLib = require('node-dht-sensor');
 const http = require('http');
 
+//commento del mac
 // Setup sensor, exit if failed
 const sensorType = 11; // 11 for DHT11, 22 for DHT22 and AM2302
 const sensorPin  = 4;  // The GPIO pin number for sensor signal
