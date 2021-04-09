@@ -1,11 +1,5 @@
 const sensorLib = require('node-dht-sensor');
 const http = require('http');
-<<<<<<< HEAD
-
-//commento del mac
-=======
-//commento
->>>>>>> 5760206bc439a0406f6bdfba965d2e46160acf3a
 // Setup sensor, exit if failed
 const sensorType = 11; // 11 for DHT11, 22 for DHT22 and AM2302
 const sensorPin  = 4;  // The GPIO pin number for sensor signal
@@ -28,7 +22,7 @@ setInterval(function() {
       });
       
       const options = {
-        hostname: '192.168.1.52',
+        hostname: '192.168.1.181',
         port: 3000,
         path: '/temperature',
         method: 'POST',
