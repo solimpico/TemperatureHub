@@ -17,7 +17,7 @@ setInterval(function() {
     let temperature = readout.temperature.toFixed(1);
     const data = JSON.stringify({
         "sensor":"ID1", 
-        "timestamp": 123456789,
+        "timestamp": Date.now(),
         "temperature":temperature      
       });
       
