@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <title>Title</title>
+    <script>
+        function startup(){
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onopen = function (event) {
+                socket.send("Text to be sent, from the client (broswer), at the server through the javascript code in html code! :)");
+            };
+            socket.onmessage = function(event) {
+                console.log(event.data);
+                document.getElementById("demo").innerHTML = event.data;
+            }
+        }
+    </script>
+</head>
+<body onload="javascript:startup();">
+    <div id = "demo">
+        ciao
+    </div>
+</body>
+</html>
